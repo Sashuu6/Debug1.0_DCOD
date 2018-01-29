@@ -1,7 +1,6 @@
 <?php
 
 
-	    $con1 = mysqli_connect("localhost","root","11qwerty10");
-	  //  mysql_select_db("sms",$con);
+	    $con1 = mysqli_connect("localhost","root","blabla");
 	    mysqli_select_db($con1,"debug");
 ?>
