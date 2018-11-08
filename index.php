@@ -114,7 +114,7 @@ require_once("connection.php");
 	 if(isset($_POST['log']))
 	 {
 		$user=$_POST['user'];
-		$pass=md5($_POST['password']);
+		$pass=$_POST['password'];
 		if($user!="" && $pass!="")
 		 {
 		$ch=mysqli_query($con1,"select * from users where UserName='$user' and Password='$pass'");
