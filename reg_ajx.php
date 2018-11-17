@@ -9,6 +9,7 @@ require('connection.php');
 					if($chk[1]=="" && $chk[2]=="")
 					{
 						mysqli_query($con1,"insert into users values ('0','$user','$pass')");
+						mysqli_query($con1,"insert into track_users values (0,'$user',0,0,0,0,0,0,0,0,0,0)");
 						echo "success";
 					}
 					else
