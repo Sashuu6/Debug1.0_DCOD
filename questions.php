@@ -394,14 +394,14 @@ function loadDoc(id) {
             <form method="post" name="frm1">
 				<h3>Question 1</h3>
                 
-		      	<p>C program to perform heap sort.</p>
+		      	<p>C program to find the binary difference between two binary numbers and also to find the bit at a particular index.</p>
                 
                 <div class="row">
   <div class="col-sm-8"><div class="form-group">
   <h2 style="     margin-top: 21px; ">Edit your code:</h2>
   <?php
    
-   $file="1-bug.c";
+   $file="binary.c";
 	if(file_exists($file))
 	{
 	/* echo "<script> alert('File Found')</script>";*/
@@ -414,7 +414,7 @@ function loadDoc(id) {
 	 
 ?>
 
-  <textarea class="form-control" rows="20" id="text1" name="text1" style="font-size-adjust: 0.45;" spellcheck="false" ><?php echo $contents ;?></textarea>
+  <textarea class="form-control" rows="20" id="text1" name="text1" style="font-size-adjust: 0.45;"  ><?php echo $contents ;?></textarea>
   
       </div></div>
   <div class="col-sm-4">
@@ -441,7 +441,7 @@ function loadDoc(id) {
             <form method="post" name="frm2" > 
 				<h3>Question 2</h3>
                 
-		      	<p>C Program to seperate odd and even elements in a linked list.</p>
+		      	<p>C Program for Non recursive creation, prefix, postfix, infix traversal of a binary tree and finding its max depth.</p>
                 
                 <div class="row">
   <div class="col-sm-8"><div class="form-group">
@@ -449,7 +449,7 @@ function loadDoc(id) {
    <?php
 
 	 
-	 $file="2-bug.c";
+	 $file="binarytree_nonrec.c";
 	if(file_exists($file))
 	{
 	/*echo "<script> alert('File Found')</script>";*/
@@ -465,7 +465,7 @@ function loadDoc(id) {
 		}
 
 ?>
-  <textarea class="form-control" rows="20"  name="text2" id="text2" style="font-size-adjust: 0.45;" spellcheck="false"><?php echo $contents; ?></textarea>
+  <textarea class="form-control" rows="20"  name="text2" id="text2" style="font-size-adjust: 0.45;"><?php echo $contents; ?></textarea>
  
       </div></div>
   <div class="col-sm-4">
@@ -492,7 +492,7 @@ function loadDoc(id) {
             <form method="post" name="frm3">
 				<h3>Question 3</h3>
                 
-		      	<p>C Program to implement circular linked list.</p>
+		      	<p>C Program to find sum or product of two matrices.</p>
                 
                 <div class="row">
   <div class="col-sm-8"><div class="form-group">
@@ -500,7 +500,7 @@ function loadDoc(id) {
   <?php
 
 	 
-	$file="3-bug.c";
+	$file="matrixmul.c";
 	 
 	if(file_exists($file))
 	{
@@ -522,7 +522,7 @@ function loadDoc(id) {
 
 
 ?>
-  <textarea class="form-control" rows="20"  name="text3" id="text3" style="font-size-adjust: 0.45;" spellcheck="false"><?php echo $contents; ?></textarea>
+  <textarea class="form-control" rows="20"  name="text3" id="text3" style="font-size-adjust: 0.45;"><?php echo $contents; ?></textarea>
       </div></div>
   <div class="col-sm-4">
       <h2>Option:</h2>
@@ -545,13 +545,13 @@ function loadDoc(id) {
             <form method="post" name="frm4">
 				<h3>Question 4</h3>
                 
-		      	<p>C program to perform operations on a binary tree.</p>
+		      	<p>C program to accept a date as an input and display the number of Saturdays and Sundays of the month.</p>
                 
                 <div class="row">
   <div class="col-sm-8"><div class="form-group">
   <h2 style="     margin-top: 21px; ">Edit your code:</h2>
   <?php
-  $file="4-bug.c";
+  $file="noofsatsun.c";
  /* echo "<script> alert('hello');</script>";*/
 	if(file_exists($file))
 	{
@@ -569,7 +569,7 @@ function loadDoc(id) {
 
 	  
 	  ?>
-  <textarea class="form-control" rows="20"  name="text4" id="text4" style="font-size-adjust: 0.45;" spellcheck="false"><?php echo $contents;?></textarea>
+  <textarea class="form-control" rows="20"  name="text4" id="text4" style="font-size-adjust: 0.45;"><?php echo $contents;?></textarea>
       </div></div>
   <div class="col-sm-4">
       <h2>Option:</h2>
@@ -592,13 +592,13 @@ function loadDoc(id) {
             <form method="post" name="frm5">
 				<h3>Question 5</h3>
                 
-		      	<p>C Program to perform operations on a singly linked list.</p>
+		      	<p>C Program to perform polynomial multiplication using linked list.</p>
                 
                 <div class="row">
   <div class="col-sm-8"><div class="form-group">
   <h2 style="     margin-top: 21px; ">Edit your code:</h2>
   <?php
- $file="5-bug.c";
+ $file="Poly.c";
 	if(file_exists($file))
 	{
 	/* echo "<script> alert('File Found')</script>";*/
@@ -614,7 +614,7 @@ function loadDoc(id) {
 		}
 
 	  ?>
-  <textarea class="form-control" rows="20"  name="text5" id="text5" style="font-size-adjust: 0.45;" spellcheck="false"><?php echo $contents;?></textarea>
+  <textarea class="form-control" rows="20"  name="text5" id="text5" style="font-size-adjust: 0.45;"><?php echo $contents;?></textarea>
       </div></div>
   <div class="col-sm-4">
       <h2>Option:</h2>

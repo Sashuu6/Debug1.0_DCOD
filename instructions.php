@@ -24,11 +24,9 @@ function redirect()
    <p> <li style="font-size-adjust:0.6"  > You are given 5 questions written in C Language to debug.</li></p>
     <p><li style="font-size-adjust:0.6"> You have 45 minutes. </li></p>
    <p> <li style="font-size-adjust:0.6"> <b>Once you start DO NOT CLOSE or REFRESH the window or PRESS BACK.</b></li></p>
-   <p><li style="font-size-adjust:0.6"> Try to compile the program successfully with minimum number of attempts. Marks will provided considering the number of attempts.</li></p>
-   <p> <li style="font-size-adjust:0.6"> <b>DO NOT PRESS ENTER, MARKS WILL NOT BE GIVEN EVEN IF YOU SUCCESFULLY DEBUG IT.</b></li></p>
-   <p> <li style="font-size-adjust:0.6"> <b>DO NOT EDIT THE CODE. YOU SHOULD ONLY DEBUG THE BUG. MAKE MINIMUM CHANGES. Even if you successfully compile the program or 
+   <p> <li style="font-size-adjust:0.6"> <b>DO NOT EDIT THE CODE. YOU SHOULD ONLY DEBUG THE BUG. Even if you successfully compile the program or 
    sucessfully debugged some bugs, marks will not be given or deducted for the program if there is any unnecessary changes in the program code.</b></li></p>
-    
+    <p><li style="font-size-adjust:0.6"> Try to compile the program successfully with minimum number of attempts. Marks will provided considering the number of attempts.</li></p>
     <p> <li style="font-size-adjust:0.6"> Once you make necessary changes to a program, click on Compile button. Appropriate message will be displayed.</li></p>
     <p><li style="font-size-adjust:0.6"> In case of a tie, the tie will be broken considering the number of attempts, changes made in the code and number of successfully compiled programs.</li></p>
    <p> <li style="font-size-adjust:0.6;border:hidden"> The decision of the judges will be final.</li></p>

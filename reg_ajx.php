@@ -5,15 +5,15 @@ require('connection.php');
 		            if($user!="" && $pass!="")
 		            {
 					$ch=mysqli_query($con1,"select * from users where UserName='$user'");
-					$count=mysqli_num_rows($ch);
-					if($count==0)
+					$chk=mysqli_fetch_row($ch);
+					if($chk[1]=="" && $chk[2]=="")
 					{
 						mysqli_query($con1,"insert into users values ('0','$user','$pass')");
 						echo "success";
 					}
 					else
 					{
-						echo "error";
+					  echo "Not Valid ";
 					}
 				}
 				

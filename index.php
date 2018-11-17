@@ -28,7 +28,6 @@ require_once("connection.php");
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-	
         window.alert = function(){};
         var defaultCSS = document.getElementById('bootstrap-css');
         function changeCSS(css){
@@ -54,16 +53,8 @@ require_once("connection.php");
               },
      success:function(response) 
            {
-			   if (response == 'error') {
-        		window.location="index.php?failed=1";
-			   }
-			   else {
-                window.location="index.php?success=1";
-               } 
-           },
-		   error:function() 
-           {
-        window.location="index.php?failed=1";
+        window.location="index.php";
+        //document.getElementById('hai').text=success;
            }
          });
 	
@@ -86,7 +77,11 @@ require_once("connection.php");
 				<div class="form-group">
                     <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
 				</div>
-				
+				<span class="button-checkbox">
+					<button type="button" class="btn btn-info active" data-color="info"><i class="state-icon glyphicon glyphicon-check"></i>&nbsp;Remember Me</button>
+                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+					<a href="" class="btn btn-link pull-right">Forgot Password?</a>
+				</span>
 				<hr class="colorgraph">
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6">
@@ -101,15 +96,7 @@ require_once("connection.php");
 				</div>
                 
                 <?php
-				if(isset($_GET['success'])) {
-					echo "<div style=\"font-size: 25px;padding: 5px;color: green;\">User registeration successful! Please login now!</div>";
-					header("refresh:1;url=index.php");   
-				}
 				
-				if(isset($_GET['failed'])) {
-					echo "<div style=\"font-size: 25px;padding: 5px;color: red;\">User already registered! Please sign in!</div>";
-					header("refresh:1;url=index.php");   
-				}
 				
 	 if(isset($_POST['log']))
 	 {
@@ -130,14 +117,13 @@ require_once("connection.php");
 		else
 		{
 		 echo"<script>alert('Logging in unsuccessful')</script>";	
-		 echo "<div style=\"font-size: 25px;padding: 11px;color: red;padding-left: 76px;\">Incorrect Username or Password!</div>";
+		 echo "failed";
 		 header("refresh:1;url=index.php");
 		}
 	}
 		else
 		 {
-			echo "<div style=\"font-size: 25px;padding: 11px;color: red;padding-left: 76px;\">Incorrect Username or Password!</div>";
-            header("refresh:1;url=index.php");   
+			echo "Invalid username and password";   
 	     }
 	   
 	
